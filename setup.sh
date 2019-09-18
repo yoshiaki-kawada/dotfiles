@@ -17,6 +17,7 @@ function deploy_iterm2() {
 function deploy_vscode() {
   ln -siv ~/dotfiles/vscode/settings.json ~/Library/Application\ Support/Code/User
   ln -siv ~/dotfiles/vscode/keybindings.json ~/Library/Application\ Support/Code/User
+  install_vscode_extentions
 }
 
 function install_vscode_extentions() {
@@ -26,7 +27,24 @@ function install_vscode_extentions() {
   done
 }
 
-deploy_dotfiles
-deploy_iterm2
-deploy_vscode
-install_vscode_extentions
+if [ "$1" == "all" ]; then
+  echo "---- all setup start ----"
+  deploy_dotfiles
+  deploy_iterm2
+  deploy_vscode
+  echo "---- all setup end ----"
+elif [ "$1" == "dotfiles" ]; then
+  echo "---- dotfiles setup start ----"
+  deploy_dotfiles
+  echo "---- dotfiles setup end ----"
+elif [ "$1" == "iterm2" ]; then
+  echo "---- iterm2 setup start ----"
+  deploy_iterm2
+  echo "---- iterm2 setup end ----"
+elif [ "$1" == "vscode" ]; then
+  echo "---- vscode setup start ----"
+  deploy_vscode
+  echo "---- vscode setup end ----"
+else
+  echo "---- invalid argument ----"
+fi
