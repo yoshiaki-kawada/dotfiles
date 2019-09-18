@@ -1,0 +1,16 @@
+{
+    "workbench.colorTheme": "Flatland_Dark",
+    "workbench.iconTheme": "material-icon-theme",
+    "window.zoomLevel": 1,
+    "editor.tabSize": 2,
+    "editor.renderWhitespace": "all",
+    "editor.renderLineHighlight": "all",
+    "editor.scrollBeyondLastLine": false,
+    "editor.formatOnPaste": true,
+    "editor.formatOnType": true,
+    "editor.minimap.enabled": false,
+    "editor.acceptSuggestionOnEnter": "off",
+    "editor.fontSize": 13,
+    "breadcrumbs.symbolPath": "off",
+    "workbench.editor.tabSizing": "shrink"
+}
