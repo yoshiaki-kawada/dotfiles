@@ -12,5 +12,8 @@
     "editor.acceptSuggestionOnEnter": "off",
     "breadcrumbs.symbolPath": "off",
     "workbench.editor.tabSizing": "shrink",
-    "editor.fontSize": 14
+    "editor.fontSize": 16,
+    "editor.lineHeight": 21,
+    "editor.suggestLineHeight": 21,
+    "editor.fontFamily": "Ricty, Menlo, Monaco, 'Courier New', monospace"
 }
