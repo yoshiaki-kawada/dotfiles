@@ -15,5 +15,6 @@
     "editor.fontSize": 16,
     "editor.lineHeight": 21,
     "editor.suggestLineHeight": 21,
-    "editor.fontFamily": "Ricty, Menlo, Monaco, 'Courier New', monospace"
+    "editor.fontFamily": "Ricty, Menlo, Monaco, 'Courier New', monospace",
+    "editor.rulers": [80, 128]
 }
