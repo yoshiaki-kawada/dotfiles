@@ -1,7 +1,7 @@
 {
     "workbench.colorTheme": "Flatland_Dark",
     "workbench.iconTheme": "material-icon-theme",
-    "window.zoomLevel": 0,
+    "window.zoomLevel": -1,
     "editor.tabSize": 2,
     "editor.renderWhitespace": "all",
     "editor.renderLineHighlight": "all",
@@ -15,6 +15,9 @@
     "editor.fontSize": 16,
     "editor.lineHeight": 21,
     "editor.suggestLineHeight": 21,
-    "editor.fontFamily": "Ricty, Menlo, Monaco, 'Courier New', monospace",
-    "editor.rulers": [80, 128]
+    "editor.rulers": [
+        80,
+        128
+    ],
+    "editor.fontFamily": "Ricty, Menlo, Monaco, 'Courier New', monospace"
 }
