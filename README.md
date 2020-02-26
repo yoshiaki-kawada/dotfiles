@@ -19,3 +19,7 @@ cd ~/dotfiles
 ```
 ./setup.sh vscode
 ```
+### export vscode extensions
+```
+code --list-extensions > ~/dotfiles/vscode/extensions
+```
