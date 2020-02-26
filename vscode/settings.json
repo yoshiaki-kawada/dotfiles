@@ -19,5 +19,6 @@
         80,
         128
     ],
-    "editor.fontFamily": "Ricty, Menlo, Monaco, 'Courier New', monospace"
+    "editor.fontFamily": "Ricty, Menlo, Monaco, 'Courier New', monospace",
+    "javascript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": false
 }
