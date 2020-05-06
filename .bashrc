@@ -16,6 +16,8 @@ alias gp='git pull'
 alias gb='git branch'
 alias gch='git checkout'
 
+alias dc='docker-compose'
+
 function title {
   echo -ne "\033]0;"$*"\007"
 }
