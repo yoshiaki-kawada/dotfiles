@@ -20,5 +20,6 @@
         128
     ],
     "javascript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": false,
-    "editor.fontFamily": "Myrica M, Menlo, Monaco, 'Courier New', monospace"
+    "editor.fontFamily": "Myrica M, Menlo, Monaco, 'Courier New', monospace",
+    "typescript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": false
 }
