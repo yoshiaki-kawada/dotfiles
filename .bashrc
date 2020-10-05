@@ -16,6 +16,7 @@ alias gp='git pull'
 alias gb='git branch'
 alias gch='git checkout'
 
+alias d='docker'
 alias dc='docker-compose'
 
 function title {
