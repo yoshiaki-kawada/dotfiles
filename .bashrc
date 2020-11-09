@@ -18,6 +18,8 @@ alias gch='git checkout'
 
 alias d='docker'
 alias dc='docker-compose'
+alias ds='docker-sync'
+alias dss='docker-sync-stack'
 
 function title {
   echo -ne "\033]0;"$*"\007"
