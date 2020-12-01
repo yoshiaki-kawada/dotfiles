@@ -11,10 +11,6 @@ cd ~/dotfiles
 ```
 ./setup.sh dotfiles
 ```
-### setup only iterm2
-```
-./setup.sh iterm2
-```
 ### setup only vscode
 ```
 ./setup.sh vscode
