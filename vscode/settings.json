@@ -1,7 +1,6 @@
 {
     "workbench.colorTheme": "Flatland_Dark",
     "workbench.iconTheme": "material-icon-theme",
-    "window.zoomLevel": -1,
     "editor.tabSize": 2,
     "editor.renderWhitespace": "all",
     "editor.renderLineHighlight": "all",
@@ -21,5 +20,7 @@
     ],
     "javascript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": false,
     "editor.fontFamily": "Myrica M, Menlo, Monaco, 'Courier New', monospace",
-    "typescript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": false
+    "typescript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": false,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "window.zoomLevel": -1
 }
