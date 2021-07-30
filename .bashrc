@@ -1,3 +1,6 @@
+export PS1='\w\[\e[32m\]$(__git_ps1 " *%s")\[\e[0m\]\$ '
+source ~/.git-prompt.sh
+
 alias ls='ls -G'
 alias ll='ls -l'
 alias la='ls -a'
