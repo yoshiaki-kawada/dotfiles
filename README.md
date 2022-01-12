@@ -11,6 +11,10 @@ cd ~/dotfiles
 ```
 ./setup.sh dotfiles
 ```
+### setup only karabiner
+```
+./setup.sh karabiner
+```
 ### setup only vscode
 ```
 ./setup.sh vscode
