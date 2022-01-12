@@ -10,9 +10,13 @@ function deploy_dotfiles() {
   done
 }
 
+function deploy_karabiner() {
+  ln -siv ~/dotfiles/karabiner/karabiner.json ~/.config/karabiner
+  ln -siv ~/dotfiles/karabiner/assets/complex_modifications/*.json ~/.config/karabiner/assets/complex_modifications
+}
+
 function deploy_vscode() {
-  ln -siv ~/dotfiles/vscode/settings.json ~/Library/Application\ Support/Code/User
-  ln -siv ~/dotfiles/vscode/keybindings.json ~/Library/Application\ Support/Code/User
+  ln -siv ~/dotfiles/vscode/*.json ~/Library/Application\ Support/Code/User
   install_vscode_extentions
 }
 
@@ -26,12 +30,17 @@ function install_vscode_extentions() {
 if [ "$1" == "all" ]; then
   echo "---- all setup start ----"
   deploy_dotfiles
+  deploy_karabiner
   deploy_vscode
   echo "---- all setup end ----"
 elif [ "$1" == "dotfiles" ]; then
   echo "---- dotfiles setup start ----"
   deploy_dotfiles
   echo "---- dotfiles setup end ----"
+elif [ "$1" == "karabiner" ]; then
+  echo "---- karabiner setup start ----"
+  deploy_karabiner
+  echo "---- karabiner setup end ----"
 elif [ "$1" == "vscode" ]; then
   echo "---- vscode setup start ----"
   deploy_vscode

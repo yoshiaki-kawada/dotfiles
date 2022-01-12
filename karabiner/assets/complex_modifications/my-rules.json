@@ -1,0 +1,23 @@
+{
+  "title": "My Rules",
+  "rules": [
+    {
+      "description": "control + j → Enter",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "j",
+            "modifiers": {
+              "mandatory": ["control"]
+            }
+          },
+          "to": [
+            { "key_code": "return_or_enter" }
+          ]
+        }
+      ]
+    }
+  ]
+}
+
