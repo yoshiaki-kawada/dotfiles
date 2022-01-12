@@ -22,5 +22,8 @@
     "editor.fontFamily": "Myrica M, Menlo, Monaco, 'Courier New', monospace",
     "typescript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": false,
     "javascript.updateImportsOnFileMove.enabled": "always",
+    "window.title": "${rootName}${separator}${activeEditorMedium}",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "window.zoomLevel": -1
 }
