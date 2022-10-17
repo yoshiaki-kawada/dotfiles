@@ -1,19 +1,43 @@
 // 既定値を上書きするには、このファイル内にキー バインドを挿入します
 [
   {
-    "key": "alt+tab",
-    "command": "workbench.action.focusRightGroup"
+    "key": "ctrl+cmd+f",
+    "command": "cursorWordPartRight",
+    "when": "textInputFocus"
   },
   {
-    "key": "cmd+k cmd+right",
-    "command": "-workbench.action.focusRightGroup"
+    "key": "ctrl+cmd+b",
+    "command": "cursorWordPartLeft",
+    "when": "textInputFocus"
   },
   {
-    "key": "shift+alt+tab",
-    "command": "workbench.action.focusLeftGroup"
+    "key": "ctrl+shift+cmd+f",
+    "command": "cursorWordPartRightSelect",
+    "when": "textInputFocus"
   },
   {
-    "key": "cmd+k cmd+left",
-    "command": "-workbench.action.focusLeftGroup"
-  }
+    "key": "ctrl+shift+cmd+b",
+    "command": "cursorWordPartLeftSelect",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+shift+f",
+    "command": "cursorRightSelect",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+shift+b",
+    "command": "cursorLeftSelect",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+shift+p",
+    "command": "cursorUpSelect",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+shift+n",
+    "command": "cursorDownSelect",
+    "when": "textInputFocus"
+  },
 ]

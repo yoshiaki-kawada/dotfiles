@@ -23,6 +23,7 @@ alias d='docker'
 alias dc='docker-compose'
 alias ds='docker-sync'
 alias dss='docker-sync-stack'
+alias mc='mutagen-compose'
 
 function title {
   echo -ne "\033]0;"$*"\007"

@@ -25,5 +25,8 @@
     "window.title": "${rootName}${separator}${activeEditorMedium}",
     "typescript.updateImportsOnFileMove.enabled": "always",
     "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "files.associations": {
+        "*.schema": "ruby"
+    },
     "window.zoomLevel": -1
 }
