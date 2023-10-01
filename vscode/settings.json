@@ -11,7 +11,6 @@
     "editor.acceptSuggestionOnEnter": "off",
     "breadcrumbs.symbolPath": "off",
     "workbench.editor.tabSizing": "shrink",
-    "editor.fontSize": 16,
     "editor.lineHeight": 21,
     "editor.suggestLineHeight": 21,
     "editor.rulers": [
@@ -19,11 +18,11 @@
         128
     ],
     "javascript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": false,
-    "editor.fontFamily": "Myrica M, Menlo, Monaco, 'Courier New', monospace",
     "typescript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": false,
     "javascript.updateImportsOnFileMove.enabled": "always",
     "window.title": "${rootName}${separator}${activeEditorMedium}",
     "typescript.updateImportsOnFileMove.enabled": "always",
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "window.zoomLevel": -1
+    "editor.fontFamily": "HackGen Console NF, monospace",
+    "editor.fontSize": 14
 }

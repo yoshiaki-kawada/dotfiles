@@ -1,0 +1,12 @@
+[directory]
+# 常にフルパスを表示する
+truncation_length = 100
+truncate_to_repo = false
+
+[git_status]
+# git statusの表示を無効にする
+disabled = true
+
+[ruby]
+# Rubyのアイコンを変更する
+symbol = ' '

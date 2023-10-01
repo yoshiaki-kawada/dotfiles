@@ -15,6 +15,10 @@ function deploy_karabiner() {
   ln -siv ~/dotfiles/karabiner/assets/complex_modifications/*.json ~/.config/karabiner/assets/complex_modifications
 }
 
+function deploy_starship() {
+  ln -siv ~/dotfiles/starship/starship.toml ~/.config
+}
+
 function deploy_vscode() {
   ln -siv ~/dotfiles/vscode/*.json ~/Library/Application\ Support/Code/User
   install_vscode_extentions
@@ -31,6 +35,7 @@ if [ "$1" == "all" ]; then
   echo "---- all setup start ----"
   deploy_dotfiles
   deploy_karabiner
+  deploy_starship
   deploy_vscode
   echo "---- all setup end ----"
 elif [ "$1" == "dotfiles" ]; then
@@ -41,6 +46,10 @@ elif [ "$1" == "karabiner" ]; then
   echo "---- karabiner setup start ----"
   deploy_karabiner
   echo "---- karabiner setup end ----"
+elif [ "$1" == "starship" ]; then
+  echo "---- starship setup start ----"
+  deploy_starship
+  echo "---- starship setup end ----"
 elif [ "$1" == "vscode" ]; then
   echo "---- vscode setup start ----"
   deploy_vscode
