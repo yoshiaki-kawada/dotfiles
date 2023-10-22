@@ -1,12 +1,32 @@
+format = """
+[](fg:#7aa2f7)\
+$directory\
+[](fg:#7aa2f7 bg:#1a1b26)\
+$git_branch\
+$git_status\
+[](fg:#1a1b26)
+$character
+"""
+
 [directory]
-# 常にフルパスを表示する
 truncation_length = 100
 truncate_to_repo = false
+read_only = '󰌾 '
+home_symbol = ' ~'
+style = 'fg:#1a1b26 bg:#7aa2f7'
+format = '[$path ]($style)[$read_only]($style)'
+
+[git_branch]
+symbol = '  '
+style = 'fg:#7aa2f7 bg:#1a1b26'
+format = '[$symbol$branch(:$remote_branch) ]($style)'
 
 [git_status]
-# git statusの表示を無効にする
-disabled = true
-
-[ruby]
-# Rubyのアイコンを変更する
-symbol = ' '
+style = 'fg:#e0af68 bg:#1a1b26'
+up_to_date = '✓ '
+ahead = '↑${count}'
+behind = '↓${count}'
+untracked = '+${count}'
+modified = '*${count}'
+deleted = '-${count}'
+format = '[\[$ahead_behind$untracked$modified$deleted\] ]($style)'
