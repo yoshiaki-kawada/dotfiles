@@ -1,9 +1,10 @@
 eval "$(rbenv init -)"
 eval "$(starship init zsh)"
 
-alias ls='ls -G'
-alias ll='ls -l'
-alias la='ls -a'
+alias ls='lsd --group-dirs=last'
+alias ll='ls -l --total-size'
+alias la='ls -A'
+alias lla='ll -A'
 
 alias be='bundle exec'
 
