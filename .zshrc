@@ -38,6 +38,26 @@ function title {
 }
 
 # ------------------------------
+# history
+# ------------------------------
+# 履歴ファイルの保存先
+HISTFILE=~/.zsh_history
+# メモリに保存される履歴の件数
+HISTSIZE=100000
+# 履歴ファイルに保存される履歴の件数
+SAVEHIST=100000
+
+# コマンド履歴ファイルを共有する
+setopt share_history
+setopt inc_append_history
+# 直前と同じコマンドの場合は履歴に追加しない
+setopt hist_ignore_dups
+# 重複するコマンドは古い方を削除する
+setopt hist_ignore_all_dups
+# 余分な空白は詰めて記録する
+setopt hist_reduce_blanks
+
+# ------------------------------
 # Zinit
 # ------------------------------
 ### Added by Zinit's installer
@@ -61,3 +81,34 @@ zinit light zsh-users/zsh-syntax-highlighting
 zinit light zsh-users/zsh-autosuggestions
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=244'
 zinit light zsh-users/zsh-completions
+
+# ------------------------------
+# peco
+# ------------------------------
+# コマンド履歴検索
+function peco-select-history() {
+  BUFFER=$(\history -n -r 1 | peco --query "$LBUFFER")
+  CURSOR=$#BUFFER
+  zle clear-screen
+}
+zle -N peco-select-history
+bindkey '^R' peco-select-history
+
+# ディレクトリ移動
+if [[ -n $(echo ${^fpath}/chpwd_recent_dirs(N)) && -n $(echo ${^fpath}/cdr(N)) ]]; then
+  autoload -Uz chpwd_recent_dirs cdr add-zsh-hook
+  add-zsh-hook chpwd chpwd_recent_dirs
+  zstyle ':completion:*' recent-dirs-insert both
+  zstyle ':chpwd:*' recent-dirs-default true
+  zstyle ':chpwd:*' recent-dirs-max 1000
+  zstyle ':chpwd:*' recent-dirs-file "$HOME/.cache/chpwd-recent-dirs"
+fi
+function peco-cdr () {
+  local selected_dir="$(cdr -l | sed 's/^[0-9]* *//' | peco)"
+  if [ -n "$selected_dir" ]; then
+    BUFFER="cd ${selected_dir}"
+    zle accept-line
+  fi
+}
+zle -N peco-cdr
+bindkey '^U' peco-cdr
