@@ -24,7 +24,7 @@
     "typescript.updateImportsOnFileMove.enabled": "always",
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.fontFamily": "HackGen Console NF, monospace",
-    "editor.fontSize": 14,
+    "editor.fontSize": 15,
     "files.associations": {
         "*.schema": "ruby"
     },
