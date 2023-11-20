@@ -1,4 +1,6 @@
 eval "$(rbenv init -)"
+eval "$(nodenv init -)"
+eval "$(direnv hook zsh)"
 eval "$(starship init zsh)"
 
 # ------------------------------
