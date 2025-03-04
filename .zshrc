@@ -1,4 +1,3 @@
-eval "$(rbenv init -)"
 eval "$(starship init zsh)"
 
 # ------------------------------
@@ -112,3 +111,5 @@ function peco-cdr () {
 }
 zle -N peco-cdr
 bindkey '^U' peco-cdr
+
+. /usr/local/opt/asdf/libexec/asdf.sh
