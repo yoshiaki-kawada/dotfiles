@@ -1,4 +1,5 @@
 eval "$(starship init zsh)"
+export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
 
 # ------------------------------
 # alias
@@ -111,5 +112,3 @@ function peco-cdr () {
 }
 zle -N peco-cdr
 bindkey '^U' peco-cdr
-
-. /usr/local/opt/asdf/libexec/asdf.sh
