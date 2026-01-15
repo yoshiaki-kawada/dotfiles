@@ -24,6 +24,11 @@ cd ~/dotfiles
 ./setup.sh starship
 ```
 
+### setup only claude
+```
+./setup.sh claude
+```
+
 ### setup only vscode
 ```
 ./setup.sh vscode

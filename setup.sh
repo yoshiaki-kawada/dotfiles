@@ -19,6 +19,10 @@ function deploy_starship() {
   ln -siv ~/dotfiles/starship/starship.toml ~/.config
 }
 
+function deploy_claude() {
+  ln -siv ~/dotfiles/claude/* ~/.claude
+}
+
 function deploy_vscode() {
   ln -siv ~/dotfiles/vscode/*.json ~/Library/Application\ Support/Code/User
   install_vscode_extentions
@@ -36,6 +40,7 @@ if [ "$1" == "all" ]; then
   deploy_dotfiles
   deploy_karabiner
   deploy_starship
+  deploy_claude
   deploy_vscode
   echo "---- all setup end ----"
 elif [ "$1" == "dotfiles" ]; then
@@ -50,6 +55,10 @@ elif [ "$1" == "starship" ]; then
   echo "---- starship setup start ----"
   deploy_starship
   echo "---- starship setup end ----"
+elif [ "$1" == "claude" ]; then
+  echo "---- claude setup start ----"
+  deploy_claude
+  echo "---- claude setup end ----"
 elif [ "$1" == "vscode" ]; then
   echo "---- vscode setup start ----"
   deploy_vscode
