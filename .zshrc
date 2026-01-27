@@ -1,5 +1,5 @@
 eval "$(starship init zsh)"
-export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
+export PATH="$HOME/.local/bin:${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
 
 # ------------------------------
 # alias
