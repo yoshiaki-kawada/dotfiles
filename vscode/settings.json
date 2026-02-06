@@ -28,7 +28,6 @@
     "files.associations": {
         "*.schema": "ruby"
     },
-    "window.zoomLevel": -1,
     "claudeCode.preferredLocation": "panel",
     "terminal.integrated.fontSize": 15
 }
