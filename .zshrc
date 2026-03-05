@@ -28,7 +28,7 @@ alias gd='git diff'
 alias gs='git status'
 
 alias d='docker'
-alias dc='docker-compose'
+alias dc='docker compose'
 alias ds='docker-sync'
 alias dss='docker-sync-stack'
 alias mc='mutagen-compose'
