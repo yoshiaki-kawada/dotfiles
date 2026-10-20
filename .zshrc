@@ -1,5 +1,6 @@
 eval "$(starship init zsh)"
 export PATH="$HOME/.local/bin:${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
+export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
 
 # ------------------------------
 # alias
